@@ -26,9 +26,15 @@
     kscan0: kscan {
         compatible = "zmk,kscan-composite";
         label = "default_kscan";
-        diode-direction = "col2row";
-        status = "okay";
-        wakeup-source;
+        
+        left {
+            kscan = <&kscan_left>
+        }
+
+        right {
+            kscan = <&kscan_right>
+            column-offset = <10>
+        }
     };
 
     // disabled by default - only on left side
