@@ -1,5 +1,9 @@
 #include "split001.dtsi" //Shared between halves
 
+&default_transform {
+col-offset = <10>; 
+};
+
 &kscan_right {
 
         row-gpios
