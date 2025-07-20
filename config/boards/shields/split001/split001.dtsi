@@ -40,6 +40,9 @@ kscan_left: kscan_left {
         diode-direction = "col2row";
         status = "okay";
         wakeup-source;
+
+        row-gpios = ;
+col-gpios = ;
 };
 
 kscan_right: kscan_right {
@@ -47,6 +50,9 @@ kscan_right: kscan_right {
         diode-direction = "col2row";
         status = "okay";
         wakeup-source;
+
+row-gpios = ;
+col-gpios = ;
 };
 
     // disabled by default - only on left side
