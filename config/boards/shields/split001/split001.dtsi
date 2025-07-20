@@ -29,12 +29,12 @@
         
         left {
             kscan = <&kscan_left>;
-        }
+        };
 
         right {
             kscan = <&kscan_right>;
             column-offset = <10>;
-        }
+        };
     };
 
     // disabled by default - only on left side
