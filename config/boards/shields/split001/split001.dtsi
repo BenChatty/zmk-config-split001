@@ -33,7 +33,6 @@
 
         right {
             kscan = <&kscan_right>;
-            column-offset = <10>;
         };
     };
 
