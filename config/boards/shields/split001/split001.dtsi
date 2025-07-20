@@ -42,7 +42,7 @@ kscan_left: kscan_left {
         diode-direction = "col2row";
         status = "okay";
         wakeup-source;
-} 
+};
 
     // disabled by default - only on left side
     left_encoder: encoder_left {
