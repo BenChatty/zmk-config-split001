@@ -28,12 +28,12 @@
         label = "default_kscan";
         
         left {
-            kscan = <&kscan_left>
+            kscan = <&kscan_left>;
         }
 
         right {
-            kscan = <&kscan_right>
-            column-offset = <10>
+            kscan = <&kscan_right>;
+            column-offset = <10>;
         }
     };
 
