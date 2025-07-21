@@ -7,11 +7,11 @@ left {
         }; 
 };
 
-kscan_left: kscan_left {
+kscan_left: kscan {
        compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         status = "okay";
-
+wakeup-source;
        
         row-gpios
             =   <&mcp_io_l 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
