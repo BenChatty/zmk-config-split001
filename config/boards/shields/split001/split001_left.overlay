@@ -1,7 +1,13 @@
 #include "split001.dtsi" //Shared between halves
 
 
-kscan_left: kscan_left {
+&kscan0 {
+left {
+            kscan = <&kscan_left>;
+        }; 
+};
+
+&kscan_left {
        compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         status = "okay";
@@ -35,11 +41,6 @@ kscan_left: kscan_left {
         b-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 
-&kscan0 {
-left {
-            kscan = <&kscan_left>;
-        }; 
-};
 
 &pinctrl {
     // I2C for MCP23017
