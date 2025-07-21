@@ -3,7 +3,8 @@
 &default_transform {
 col-offset = <10>; 
 };
-&kscan0 {
+
+&full_kscan {
 right {
             kscan = <&kscan_right>;
         };
