@@ -1,7 +1,17 @@
 #include "split001.dtsi" //Shared between halves
 
-&kscan_left {
-    
+&kscan0 {
+left {
+            kscan = <&kscan_left>;
+        }; 
+};
+kscan_left: kscan_left {
+       compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        status = "okay";
+        wakeup-source;
+
+       
         row-gpios
             =   <&mcp_io_l 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&mcp_io_l 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
