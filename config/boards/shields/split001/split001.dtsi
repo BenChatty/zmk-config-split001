@@ -26,20 +26,9 @@
     kscan0: kscan {
         compatible = "zmk,kscan-composite";
 
-        right {
-            kscan = <&kscan_right>;
-        };
+        
     };
 
-kscan_right: kscan_right {
-        compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
-        status = "okay";
-        wakeup-source;
-
-row-gpios = ;
-col-gpios = ;
-};
 
     // disabled by default - only on left side
     left_encoder: encoder_left {
