@@ -25,25 +25,11 @@
 
     kscan0: kscan {
         compatible = "zmk,kscan-composite";
-        
-        left {
-            kscan = <&kscan_left>;
-        };
 
         right {
             kscan = <&kscan_right>;
         };
     };
-
-kscan_left: kscan_left {
-       compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
-        status = "okay";
-        wakeup-source;
-
-        row-gpios = ;
-col-gpios = ;
-};
 
 kscan_right: kscan_right {
         compatible = "zmk,kscan-gpio-matrix";
