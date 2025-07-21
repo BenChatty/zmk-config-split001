@@ -3,8 +3,17 @@
 &default_transform {
 col-offset = <10>; 
 };
+&kscan0 {
+right {
+            kscan = <&kscan_right>;
+        };
+};
 
-&kscan_right {
+kscan_right: kscan_right {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        status = "okay";
+        wakeup-source;
 
         row-gpios
             =   <&mcp_io_r 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
