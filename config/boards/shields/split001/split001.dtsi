@@ -23,7 +23,7 @@
         >;
     };
 
-    kscan0: kscan {
+    full_kscan: kscan0 {
         compatible = "zmk,kscan-composite";
 
         
