@@ -9,7 +9,7 @@ right {
         };
 };
 
-kscan_right: kscan_right {
+kscan_right: kscan2 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         status = "okay";
