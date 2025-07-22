@@ -1,17 +1,7 @@
 #include "split001.dtsi" //Shared between halves
 
 
-&kscan {
-compatible = "zmk,kscan-composite"; 
-
-left {
-            kscan_left = <&kscan_left>;
-        }; 
-};
-
-kscan_left: kscan_left {
-       compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
+&kscan_left {
         status = "okay";
 wakeup-source;
        
