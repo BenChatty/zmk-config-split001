@@ -1,11 +1,11 @@
 #include "split001.dtsi" //Shared between halves
 
 
-&full_kscan {
+&kscan0 {
 compatible = "zmk,kscan-composite"; 
 
 left {
-            full_kscan = <&kscan_left>;
+            kscan0 = <&kscan_left>;
         }; 
 };
 
