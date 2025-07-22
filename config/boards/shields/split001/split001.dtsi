@@ -27,7 +27,14 @@
     kscan: kscan {
         compatible = "zmk,kscan-composite";
 
-        
+    left {
+            kscan = <&kscan_left>;
+        }; 
+};
+
+kscan_left: kscan_left {
+       compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";    
     };
 
 
