@@ -30,12 +30,20 @@
     left {
             kscan = <&kscan_left>;
         }; 
+right {
+            kscan = <&kscan_right>;
+        }; 
 };
 
 kscan_left: kscan_left {
        compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";    
     };
+
+kscan_right: kscan_right {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+};
 
 
     // disabled by default - only on left side
