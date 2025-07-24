@@ -26,6 +26,7 @@
 
     kscan: kscan {
         compatible = "zmk,kscan-composite";
+        kscan = <&left &right>;
 
     left {
             kscan = <&kscan_left>;
