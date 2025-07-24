@@ -26,12 +26,13 @@
 
     kscan: kscan {
         compatible = "zmk,kscan-composite";
-        kscan = <&left &right>;
+        rows = <5>;
+        columns = <22>;
 
-    left {
+    left: left{
             kscan = <&kscan_left>;
         }; 
-right {
+right: right{
             kscan = <&kscan_right>;
         }; 
 };
