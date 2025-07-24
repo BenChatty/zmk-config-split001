@@ -42,7 +42,8 @@ kscan_left: kscan_left {
         diode-direction = "col2row";    
     };
 
-
+kscan_right: kscan_right {
+};
 
 
     // disabled by default - only on left side
