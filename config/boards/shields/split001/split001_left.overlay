@@ -1,10 +1,7 @@
 #include "split001.dtsi" //Shared between halves
 
 
-&kscan_left {
-        status = "okay";
-wakeup-source;
-       
+&kscan {
         row-gpios
             =   <&mcp_io_l 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&mcp_io_l 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
@@ -59,7 +56,7 @@ wakeup-source;
     };
 };
 
-&i2c0 {
+&xiao_l_i2c {
     compatible = "nordic,nrf-twim";
     status = "okay";
     clock-frequency = <I2C_BITRATE_FAST>;
@@ -73,5 +70,7 @@ wakeup-source;
         reg = <0x20>;
         #gpio-cells = <2>;
         ngpios = <16>;
+        int-gpios = <&xiao_d 1 GPIO_ACTIVE_LOW &xiao_d 0 GPIO_ACTIVE_LOW>;
+        reset-gpios = <&xiao_d 6 GPIO_ACTIVE_LOW>;
     };
 };

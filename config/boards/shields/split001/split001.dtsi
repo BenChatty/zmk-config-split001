@@ -25,25 +25,11 @@
     };
 
     kscan: kscan {
-        compatible = "zmk,kscan-composite";
-        rows = <5>;
-        columns = <22>;
-
-    left: left{
-            kscan = <&kscan_left>;
-        }; 
-right: right{
-            kscan = <&kscan_right>;
-        }; 
-};
-
-kscan_left: kscan_left {
-       compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";    
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        status = "okay";
+        wakeup-source;    
     };
-
-kscan_right: kscan_right {
-};
 
 
     // disabled by default - only on left side
