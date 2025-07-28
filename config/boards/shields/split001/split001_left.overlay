@@ -30,7 +30,7 @@
     };
 
 
-&pinctrl {
+/*&pinctrl {
     // I2C for MCP23017
     i2c0_default: i2c0_default {
         group1 {
@@ -54,9 +54,9 @@
             low-power-enable;
         };
     };
-};
+};*/
 
-&xiao_l_i2c {
+&i2c0 {
     compatible = "nordic,nrf-twim";
     status = "okay";
     clock-frequency = <I2C_BITRATE_FAST>;
