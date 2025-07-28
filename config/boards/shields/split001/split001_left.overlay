@@ -3,24 +3,24 @@
 
 &kscan {
         row-gpios
-            =   <&mcp_io_l 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io_l 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io_l 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io_l 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io_l 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+            =   <&mcp_io 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 
         col-gpios
-            =   <&mcp_io_l 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io_l 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io_l 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io_l 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io_l 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io_l 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io_l 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io_l 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io_l 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io_l 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io_l 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+            =   <&mcp_io 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 };
 
 &left_encoder {
@@ -54,7 +54,7 @@
             low-power-enable;
         };
     };
-};*/
+};
 
 &i2c0 {
     compatible = "nordic,nrf-twim";
@@ -62,7 +62,7 @@
     clock-frequency = <I2C_BITRATE_FAST>;
     wakeup-source;
 
-    mcp_io_l: mcp23017@20 {
+    mcp_io: mcp23017@20 {
         compatible = "microchip,mcp230xx";
         status = "okay";
         gpio-controller;
@@ -72,4 +72,4 @@
         ngpios = <16>;
         int-gpios = <&xiao_d 1 GPIO_ACTIVE_LOW>;
     };
-};
+};*/
