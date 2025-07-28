@@ -59,7 +59,10 @@
         };
     };
 
-    &i2c0 {
+    
+};
+
+&i2c0 {
     compatible = "nordic,nrf-twim";
     status = "okay";
     clock-frequency = <I2C_BITRATE_FAST>;
@@ -75,5 +78,4 @@
         ngpios = <16>;
         int-gpios = <&xiao_d 1 GPIO_ACTIVE_LOW>;
     };
-};
 };
