@@ -3,24 +3,24 @@
 
 &kscan {
         row-gpios
-            =   <&mcp_io 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+            =   <&mcp_io 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 23 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 25 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 
         col-gpios
-            =   <&mcp_io 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            =   <&mcp_io 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&mcp_io 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&mcp_io 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&mcp_io 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&mcp_io 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+                <&mcp_io 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 };
 
 &left_encoder {
