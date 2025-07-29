@@ -13,6 +13,9 @@ if SHIELD_SPLIT001_LEFT || SHIELD_SPLIT001_RIGHT
 config ZMK_SPLIT
     default y
 
+config I2C 
+default y
+
 config ZMK_KSCAN_MATRIX_POLLING
 default y
 
